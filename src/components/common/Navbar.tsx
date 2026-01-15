@@ -20,7 +20,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href={'/'} className="group flex items-center justify-start gap-2">
         <Image
-          src={'/icon.svg'}
+          src={'/Icon.svg'}
           alt="Logo"
           width={24}
           height={24}

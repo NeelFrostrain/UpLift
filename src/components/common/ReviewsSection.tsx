@@ -77,16 +77,13 @@ export default function ReviewsSection() {
   }, [api]);
 
   return (
-    <SectionWrapper className="w-full flex-col px-4 py-12">
+    <SectionWrapper className="w-full flex-col px-4 py-12" id="reviews">
       {/* <SectionTitlebar
         text="Reviews"
         description="What our clients say about us "
       /> */}
       {/* Dark Container */}
-      <div
-        className="mx-auto my-20 w-full max-w-7xl rounded-[45px] bg-[#191a23] py-16 text-white md:py-24"
-        id="reviews"
-      >
+      <div className="mx-auto my-20 w-full max-w-7xl rounded-[45px] bg-[#191a23] py-16 text-white md:py-24">
         <Carousel
           setApi={setApi}
           opts={{

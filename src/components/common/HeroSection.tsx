@@ -6,11 +6,11 @@ import { motion } from 'motion/react';
 
 export default function HeroSection() {
   return (
-    <SectionWrapper className="mt-50 mb-30 h-128 flex-col items-center gap-2 px-2 md:mt-0 md:h-180 md:flex-row md:justify-between md:gap-0 xl:pt-10">
-      <div
-        className="flex h-full flex-1 items-center justify-center md:hidden md:justify-end"
-        id="about"
-      >
+    <SectionWrapper
+      className="mt-50 mb-30 h-128 flex-col items-center gap-2 px-2 md:mt-0 md:h-180 md:flex-row md:justify-between md:gap-0 xl:pt-10"
+      id="about"
+    >
+      <div className="flex h-full flex-1 items-center justify-center md:hidden md:justify-end">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -46,16 +46,17 @@ export default function HeroSection() {
           marketing, and content creation.
         </motion.p>
         <div className="flex h-fit w-full items-center justify-center md:justify-start">
-          <motion.button
+          <motion.a
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hover:bg-primary mt-3 cursor-pointer rounded-[14px] bg-black px-6 py-3 text-sm text-white transition-all duration-150 ease-in hover:text-black hover:shadow-[0_5px_0_0_rgba(0,0,0,1)] hover:outline hover:outline-black md:mt-1"
+            href="#contact-us"
           >
             Book a consultation
-          </motion.button>
+          </motion.a>
         </div>
       </div>
       <div className="hidden h-full flex-1 items-center justify-center md:flex md:justify-end">

@@ -99,7 +99,7 @@ export default function TeamSection() {
   };
 
   return (
-    <SectionWrapper className="flex-col">
+    <SectionWrapper className="flex-col" id="team">
       <SectionTitlebar
         text="Team"
         description="Meet the skilled and experienced team behind our successful digital marketing strategies"
@@ -111,7 +111,6 @@ export default function TeamSection() {
         whileInView="visible"
         viewport={{ once: true }}
         className="grid h-fit w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        id="team"
       >
         {team.map((member, index) => (
           <motion.div key={index} variants={cardVariants}>

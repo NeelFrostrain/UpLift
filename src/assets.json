@@ -1,0 +1,66 @@
+{
+  "Company_logos": [
+    {
+      "url": "/AmamzonCompanylogo.png"
+    },
+    {
+      "url": "/DribbbleCompanylogo.png"
+    },
+    {
+      "url": "/HobspotCompanylogo.png"
+    },
+    {
+      "url": "/NetflixCompanylogo.png"
+    },
+    {
+      "url": "/NotionCompanylogo.png"
+    },
+    {
+      "url": "/ZoomCompanylogo.png"
+    }
+  ],
+  "services": [
+    {
+      "primaryText": "Search engine",
+      "secondaryText": "optimization",
+      "imageUrl": "/ServicesIllustration_01.png",
+      "bgColor": "bg-background",
+      "textBgColor": "bg-primary"
+    },
+    {
+      "primaryText": "Pay-per-click",
+      "secondaryText": "advertising",
+      "imageUrl": "/ServicesIllustration_02.png",
+      "bgColor": "bg-primary",
+      "textBgColor": "bg-background"
+    },
+    {
+      "primaryText": "Social Media",
+      "secondaryText": "marketing",
+      "imageUrl": "/ServicesIllustration_03.png",
+      "bgColor": "bg-card-foreground",
+      "textBgColor": "bg-background"
+    },
+    {
+      "primaryText": "Content",
+      "secondaryText": "Creation",
+      "imageUrl": "/ServicesIllustration_05.png",
+      "bgColor": "bg-background",
+      "textBgColor": "bg-primary"
+    },
+    {
+      "primaryText": "Email",
+      "secondaryText": "marketing",
+      "imageUrl": "/ServicesIllustration_05.png",
+      "bgColor": "bg-primary",
+      "textBgColor": "bg-background"
+    },
+    {
+      "primaryText": "Analytics and",
+      "secondaryText": "Tracking",
+      "imageUrl": "/ServicesIllustration_06.png",
+      "bgColor": "bg-card-foreground",
+      "textBgColor": "bg-primary"
+    }
+  ]
+}

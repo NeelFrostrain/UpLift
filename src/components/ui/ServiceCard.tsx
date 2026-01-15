@@ -20,7 +20,7 @@ export default function ServiceCard({
   return (
     <div
       className={cn(
-        'bg-background flex h-60 w-full items-center justify-center gap-2 rounded-4xl border-2 p-8 shadow-[0_5px_0_0_rgba(0,0,0,1)]',
+        'bg-background flex h-60 w-full items-center justify-center gap-2 rounded-4xl border-2 p-8 shadow-[0_5px_0_0_rgba(0,0,0,1)] transition-all duration-150 ease-in-out hover:scale-105',
         bgColor ? bgColor : 'bg-background',
       )}
     >

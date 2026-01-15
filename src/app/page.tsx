@@ -1,7 +1,9 @@
 import HeroSection from '@/components/common/HeroSection';
 import Navbar from '@/components/common/Navbar';
 import ServicesSection from '@/components/common/ServicesSection';
+import TeamSection from '@/components/common/TeamSection';
 import TrustedSection from '@/components/common/TrustedSection';
+import WorkingProcessSection from '@/components/common/WorkingProcessSection';
 
 export default function App() {
   return (
@@ -10,6 +12,8 @@ export default function App() {
       <HeroSection />
       {/* <TrustedSection /> */}
       <ServicesSection />
+      <WorkingProcessSection />
+      <TeamSection />
     </div>
   );
 }

@@ -41,7 +41,7 @@
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0 0); /* #191919 */
-  --primary: oklab(92.366% -0.12652 0.14945); /* #B9FF66 - Lime Green */
+  --primary: rgb(185, 255, 102); /* #B9FF66 - Lime Green */
   --primary-foreground: oklch(0.129 0 0);
   --secondary: oklch(0.129 0 0); /* Black as secondary/cards */
   --secondary-foreground: oklch(1 0 0);

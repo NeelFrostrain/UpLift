@@ -41,7 +41,7 @@
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0 0); /* #191919 */
-  --primary: oklch(0.915 0.258 123.5); /* #B9FF66 - Lime Green */
+  --primary: oklab(92.366% -0.12652 0.14945); /* #B9FF66 - Lime Green */
   --primary-foreground: oklch(0.129 0 0);
   --secondary: oklch(0.129 0 0); /* Black as secondary/cards */
   --secondary-foreground: oklch(1 0 0);
@@ -57,7 +57,7 @@
   --border: oklch(0.129 0 0); /* Bold black borders like the image */
   --input: oklch(0.922 0 0);
   --ring: oklch(0.129 0 0);
-  --radius: 2.5rem; /* Large corners for the "Positivus" style cards */
+  --radius: 0.5rem; /* Large corners for the "Positivus" style cards */
 }
 
 /* ... keep your existing .dark and @layer base code ... */

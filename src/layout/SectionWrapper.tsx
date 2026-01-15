@@ -9,7 +9,7 @@ export default function SectionWrapper({ children, className }: Props) {
   return (
     <div
       className={cn(
-        'mt-10 flex h-full w-full items-center justify-center px-2 py-10 md:px-10 md:py-0',
+        'mt-10 mb-20 flex h-full w-full items-center justify-center px-2 py-10 md:px-10 md:py-0',
         className,
       )}
     >

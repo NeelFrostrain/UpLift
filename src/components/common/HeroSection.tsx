@@ -3,7 +3,7 @@ import SectionWrapper from '@/layout/SectionWrapper';
 
 export default function HeroSection() {
   return (
-    <SectionWrapper className="h-128 flex-col items-center gap-2 px-2 md:flex-row md:justify-between md:gap-0">
+    <SectionWrapper className="mt-20 h-128 flex-col items-center gap-2 px-2 md:h-180 md:flex-row md:justify-between md:gap-0 xl:pt-10">
       <div className="flex h-full flex-1 items-center justify-center md:hidden md:justify-end">
         <Image
           src={'/Hero_Illustration.png'}

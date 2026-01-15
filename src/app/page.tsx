@@ -1,3 +1,5 @@
+import ContactSection from '@/components/common/ContactSection';
+import FooterSection from '@/components/common/FooterSection';
 import HeroSection from '@/components/common/HeroSection';
 import Navbar from '@/components/common/Navbar';
 import ReviewsSection from '@/components/common/ReviewsSection';
@@ -16,6 +18,8 @@ export default function App() {
       <TeamSection />
       <TrustedSection />
       <ReviewsSection />
+      <ContactSection />
+      <FooterSection />
     </div>
   );
 }

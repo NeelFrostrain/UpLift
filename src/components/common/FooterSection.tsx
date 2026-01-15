@@ -7,11 +7,12 @@ import { Input } from '../ui/input';
 
 export default function FooterSection() {
   const navLinks = [
-    { name: 'About us', href: '#about' },
+    { name: 'About Us', href: '#about' },
+    { name: 'Team', href: '#team' },
     { name: 'Services', href: '#services' },
-    { name: 'Use Cases', href: '#team' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Blog', href: '#blog' },
+    // { name: 'Our Team', href: '#team' },
+    { name: 'Reviews', href: '#reviews' },
+    // { name: 'Pricing', href: '#pricing' },
   ];
 
   return (

@@ -111,6 +111,7 @@ export default function TeamSection() {
         whileInView="visible"
         viewport={{ once: true }}
         className="grid h-fit w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        id="team"
       >
         {team.map((member, index) => (
           <motion.div key={index} variants={cardVariants}>

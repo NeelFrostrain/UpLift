@@ -21,7 +21,10 @@ export default function ContactSection() {
         description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
         descriptionClassName="max-w-70"
       />
-      <div className="relative mt-10 flex w-full items-stretch justify-between overflow-hidden rounded-2xl border bg-gray-100 p-5 text-black shadow-[0_5px_0_0_rgba(0,0,0,1)] lg:border-none lg:bg-transparent lg:px-0 lg:shadow-none">
+      <div
+        className="relative mt-10 flex w-full items-stretch justify-between overflow-hidden rounded-2xl border bg-gray-100 p-5 text-black shadow-[0_5px_0_0_rgba(0,0,0,1)] lg:border-none lg:bg-transparent lg:px-0 lg:shadow-none"
+        id="contact-us"
+      >
         {/* Form Side */}
         <motion.div
           initial="hidden"

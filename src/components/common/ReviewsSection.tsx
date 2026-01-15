@@ -83,7 +83,10 @@ export default function ReviewsSection() {
         description="What our clients say about us "
       /> */}
       {/* Dark Container */}
-      <div className="mx-auto my-20 w-full max-w-7xl rounded-[45px] bg-[#191a23] py-16 text-white md:py-24">
+      <div
+        className="mx-auto my-20 w-full max-w-7xl rounded-[45px] bg-[#191a23] py-16 text-white md:py-24"
+        id="reviews"
+      >
         <Carousel
           setApi={setApi}
           opts={{

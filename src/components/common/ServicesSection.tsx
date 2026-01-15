@@ -34,6 +34,7 @@ export default function ServicesSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
         className="my-10 grid w-full grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+        id="services"
       >
         {assets.services.map((service, index) => (
           <motion.div key={index} variants={cardVariants}>

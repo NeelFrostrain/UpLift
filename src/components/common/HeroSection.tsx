@@ -7,7 +7,10 @@ import { motion } from 'motion/react';
 export default function HeroSection() {
   return (
     <SectionWrapper className="mt-50 mb-30 h-128 flex-col items-center gap-2 px-2 md:mt-0 md:h-180 md:flex-row md:justify-between md:gap-0 xl:pt-10">
-      <div className="flex h-full flex-1 items-center justify-center md:hidden md:justify-end">
+      <div
+        className="flex h-full flex-1 items-center justify-center md:hidden md:justify-end"
+        id="about"
+      >
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

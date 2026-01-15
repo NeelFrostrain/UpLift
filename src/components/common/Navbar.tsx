@@ -10,10 +10,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
     { name: 'About Us', href: '#about' },
+    { name: 'Team', href: '#team' },
     { name: 'Services', href: '#services' },
-    { name: 'Our Team', href: '#team' },
+    // { name: 'Our Team', href: '#team' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'Pricing', href: '#pricing' },
+    // { name: 'Pricing', href: '#pricing' },
   ];
 
   const navItemVariants = {
@@ -58,14 +59,15 @@ export default function Navbar() {
             </Link>
           </motion.div>
         ))}
-        <motion.button
+        <motion.a
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="bg-primary hover:bg-background card-neo h-11 w-40 cursor-pointer rounded-[14px] border border-black text-sm transition-all duration-150 ease-in hover:text-black"
+          className="bg-primary hover:bg-background card-neo flex h-11 w-40 cursor-pointer items-center justify-center rounded-[14px] border border-black text-sm transition-all duration-150 ease-in hover:text-black"
+          href="#contact-us"
         >
           Request a quote
-        </motion.button>
+        </motion.a>
       </div>
 
       {/* Mobile Menu Toggle */}

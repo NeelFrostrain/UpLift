@@ -27,7 +27,7 @@ export default function SectionTitlebar({
       {description && (
         <p
           className={cn(
-            'mx-5 mt-5 max-w-150 text-sm md:mx-2 md:mt-0',
+            'mx-5 mt-5 max-w-150 text-center text-sm md:mx-2 md:mt-0 sm:text-left',
             descriptionClassName,
           )}
         >

@@ -36,7 +36,7 @@ const TeamMemberCard = ({ name, role, experience, imageUrl }: MemberProps) => {
 export default function TeamSection() {
   const team = [
     {
-      name: 'John Smith',
+      name: 'Jain Smith',
       role: 'CEO and Founder',
       imageUrl: 'https://i.pravatar.cc/150?u=1',
       experience:

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +16,18 @@ export default function Navbar() {
     { name: 'Pricing', href: '#pricing' },
   ];
 
+  const navItemVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <nav className="fixed top-0 z-50 flex h-20 w-full items-center justify-between bg-white px-6 md:relative md:bg-transparent md:px-10 xl:mb-20">
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      className="fixed top-0 z-50 flex h-20 w-full items-center justify-between bg-white px-6 md:relative md:bg-transparent md:px-10 xl:mb-20"
+    >
       {/* Logo */}
       <Link href={'/'} className="group flex items-center justify-start gap-2">
         <Image
@@ -32,17 +43,29 @@ export default function Navbar() {
       {/* Desktop Links */}
       <div className="hidden items-center space-x-4 md:flex xl:space-x-8">
         {navLinks.map((link, index) => (
-          <Link
+          <motion.div
             key={index}
-            href={link.href}
-            className="hover:text-destructive text-sm tracking-wide transition-all duration-150 ease-in hover:underline"
+            variants={navItemVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: index * 0.1 + 0.5, duration: 0.5 }}
           >
-            {link.name}
-          </Link>
+            <Link
+              href={link.href}
+              className="hover:text-destructive text-sm tracking-wide transition-all duration-150 ease-in hover:underline"
+            >
+              {link.name}
+            </Link>
+          </motion.div>
         ))}
-        <button className="bg-primary hover:bg-background card-neo h-11 w-40 cursor-pointer rounded-[14px] border border-black text-sm transition-all duration-150 ease-in hover:text-black">
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="bg-primary hover:bg-background card-neo h-11 w-40 cursor-pointer rounded-[14px] border border-black text-sm transition-all duration-150 ease-in hover:text-black"
+        >
           Request a quote
-        </button>
+        </motion.button>
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -76,6 +99,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

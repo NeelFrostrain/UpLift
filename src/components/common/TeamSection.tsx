@@ -1,6 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import SectionWrapper from '@/layout/SectionWrapper';
 import { Linkedin } from 'lucide-react'; // Using lucide-react for the icon
+
+import { motion } from 'motion/react';
 import SectionTitlebar from '../ui/SectionTitlebar';
 
 interface MemberProps {
@@ -79,6 +83,21 @@ export default function TeamSection() {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <SectionWrapper className="flex-col">
       <SectionTitlebar
@@ -86,11 +105,19 @@ export default function TeamSection() {
         description="Meet the skilled and experienced team behind our successful digital marketing strategies"
         descriptionClassName="md:max-w-80"
       />
-      <div className="grid h-fit w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid h-fit w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {team.map((member, index) => (
-          <TeamMemberCard key={index} {...member} />
+          <motion.div key={index} variants={cardVariants}>
+            <TeamMemberCard {...member} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </SectionWrapper>
   );
 }
